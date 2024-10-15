@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura On-Line</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="text-center">
+        <span id="fa" class="fa"></span> Conversor de Temperatura
+    </h1>
+    <div class="container">
+        <form class="text-center" id="tempCalc" onsubmit="calculateTemp(); return false">
+            <label for="temp">Digite a Temperatura que deseja converter!</label>
+            <div class="row">
+                <div class="col">
+                    <input type="number" step="any" id="temp" class="form-control" placeholder="Digite a Temperatura" />
+                </div>
+                <div class="col">
+                    <select name="temp_diff" class="form-control" id="temp_diff">
+                        <option value="cel">
+                            <span>&#176;</span>Celsius
+                        </option>
+                        <option value="fah">
+                            <span>&#176;</span>Fahrenheit
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger d-flex justify-content-center mx-auto my-2">
+                Enviar
+            </button>
+            <br>
+            <span id="resultContainer"></span>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/b8e4ae641e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

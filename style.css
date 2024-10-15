@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background: #99B6F2;
+    background: linear-gradient(to right, #1A4AD9, #F26B8F);
+    overflow: hidden;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#fa {
+    font-size: 60px;
+}
+
+form {
+    background-color: #F2CB05;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#tempCalc label {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row>.col {
+    flex-grow: 1;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+
+.row>.col input {
+    font-size: 1rem;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.row .col:nth-child(2) select {
+    font-size: 1rem;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    text-align: center;
+    padding: 12px 25px;
+    margin: 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #040D26;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #040D26;
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+
+#resultContainer {
+    font-size: 35px;
+    font-weight: 600;
+    color: #040D26;
+}
+
+@media screen and (max-width: 768px) {
+
+    form,
+    h1 {
+        transform: scale(0.8);
+    }
+}
